@@ -9,5 +9,9 @@ int main() {
     // returns a value back to the calling function
     // the return value must be the same of that of the
     // type of the calling function.
+    
+    // the return of a main function is a status indicator
+        // 0 idicates that the function return was a success
+        // while a nonzero repressents some type of error.
     return 0; // type int (0)
 }
