@@ -16,6 +16,8 @@ int main() {
     std::cout << "The Sum of 1 to 10 is " 
               << sum << std::endl;
 
+ //----------------
+
     // ex 1.9 
     /*
         Write a program that uses the while to sum the numbers 50 to 100
@@ -52,6 +54,55 @@ int main() {
         std::cout << "The number is " << num1 << std::endl;
         --num1;
   }
+  
+ // ----------------- 
 
+  int forSum = 0;
+  // for loops consist of three parts
+    // the init-statement 
+    // the condition statement
+    // the expression
+  // the val is initialized to 1 , the condition checks if the val
+    // is greater or equal to 10
+  for (int val = 1; val <= 10; val++)
+  {
+    // standard library displays to terminal the value of val
+    std::cout << "The val is " 
+              << val <<  "\n" << std::endl;
+    // the sum is increased by the value of val
+    forSum += val;
+    // standard lib displays to the terminal the value of sum.
+    std::cout << "The sum is " 
+              << forSum << "\n" << std::endl;
+
+   }
+  /*
+  ex 1.12
+  */
+    int sumFor = 0;
+    for (int i = -100; i <= 100; ++i) {
+        sumFor += i;
+        std::cout << "The sum is " << sumFor << "\n" << std::endl;
+        std::cout << "The value is " << i << std::endl;
+
+ }
+ int theSum = 0;
+ for (int i = 50; i <= 100; ++i) {
+    std::cout   << "The number is " << i << "\t"
+                << "The sum is " << theSum 
+                << std::endl;
+    theSum += i;
+ }
+
+ int blastOff = 0;
+ for (int i = 10; i >= blastOff; --i) {
+    if (i == 0) {
+        std::cout << "blastoff!! 🚀 ";
+    }
+    else {
+    std::cout << i << "\n";
+    }
+    std::cout << "\n";
+ }
     return 0;
 }
