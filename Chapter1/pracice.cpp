@@ -11,5 +11,6 @@ int main() {
     std::cout << v2 << std::endl;
     std::cout << "is" << std::endl;
     std::cout << v1 * v2 << std::endl;
+    
     return 0;
 }
