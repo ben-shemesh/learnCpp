@@ -10,10 +10,16 @@
 int main() {
     // to handle input we use an object of type istream (cin)
         // for output we use an object of type ostream (cout)
+    // this executes an expression, all expressions in C++ produce a value
     std::cout << "Enter two numbers" << std::endl;
     int v1 = 0, v2 = 0;
     std::cin >> v1 >> v2;
-    std::cout << "The sum of:"<< v1 << "and" << v2 << " is: "
+    std::cout << "The sum of "<< v1 << " and " << v2 << " is: "
+                            /* std::endl is refered to as a manipulator, it manipulates
+                                the buffer with the ostream device. 
+                                flushing the buffer ensures that all the output is actually written to
+                                the the ostream rather than sitting in memory waiting to b written.
+                            */
               << v1 + v2 << std::endl;
 
     // returns a value back to the calling function
