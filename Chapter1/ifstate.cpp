@@ -26,7 +26,7 @@ int main(){
                 count = 1;
             }
         }
-        std::cout << currVal << " occurs " << count << " times \t"
+        std::cout << currVal << " occurs " << cout << " times \t"
             << std::endl;
     }
     return 0;

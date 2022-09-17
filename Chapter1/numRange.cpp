@@ -1,4 +1,5 @@
 #include <iostream>
+
 /*
 ex 1.19
     revise the program you wrote for the exercise 1.11
@@ -17,7 +18,7 @@ int main() {
         while (num1 >= num2)
         {
             // prints the current number
-            std::cout << " The number is "
+            std::cout << " The number is \t"
                     << num1 << std::endl;
             // decrements the larger number
             num1--;
@@ -29,7 +30,7 @@ int main() {
         while (num1 <= num2)
         {
             // prints the numbers
-            std::cout << " The number is "
+            std::cout << " The number is \t"
                     << num1 << std::endl;
             // increments the number.
             num1++;
