@@ -41,12 +41,15 @@
     std::cout << "\t Hi \n";
     std::cout << "-----------" << std::endl;
 
-    std::cout << 'a' << " : is of type char\n" << L'a'
-              << " : is of type wchar_t\n" << "a"
-              << " : is of type string literal, with a size of 2 \n" << L"a"
-              << " : is of type wide characters (an array of chars of type wide character wchar_t)\n"
+    std::cout << "'a' "  << "which represents the value (" << 'a' << ") : is of type char\n" 
+              << "L'a' which represents the value ("  << L'a' << ") : is of type wchar_t\n" 
+              << "\"a\" " << "which represents the value (" << "a" << ") : is of type string literal, with a size of 2 \n" 
+              << "L\"a\" " << "which represents the value (" << L"a" << ") : is of type wide characters\n"
               << std::endl;
-    std::cout << 10 << " : is of type int\n" << 10u
+    std::cout << "-----------" << std::endl;
+
+    std::cout << "10" << " which has the value (" << 10  << ") : is of type int\n" 
+              << 10u
               << " : is of type usigned int\n" << 10L
               << " : is of type long int (32bits)\n" << 10uL
               << " : is of type unsinged long (32bits)\n" << 012
