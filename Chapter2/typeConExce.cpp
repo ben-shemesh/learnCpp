@@ -25,6 +25,6 @@ int main() {
     // will evaluate to 0; (u)10 - (i)10
     std::cout << u << " minus " << i << " equals " 
               << u - i << std::endl;
-
+              
     return 0;
 }
