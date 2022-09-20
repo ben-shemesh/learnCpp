@@ -48,22 +48,23 @@
               << std::endl;
     std::cout << "-----------" << std::endl;
 
-    std::cout << "10" << " which has the value (" << 10  << ") : is of type int\n" 
-              << 10u
-              << " : is of type usigned int\n" << 10L
-              << " : is of type long int (32bits)\n" << 10uL
-              << " : is of type unsinged long (32bits)\n" << 012
-              << " : is of type octal, having the value of: 10\n" << 0xc
-              << " : is of type hex, having the valiue of 10\n"
+    std::cout << "10\t" << ": which represents the value (" << 10 << ") : is of type int\n"
+              << "10u\t" << ": which represents the value (" << 10u << ") : is of type unsigned int\n"
+              << "10L\t" << ": which represents the value (" << 10L << ") : is of type long\n"
+              << "10uL\t" << ": which represents the value (" << 10uL << ") : is of type unsigned long \n"
+              << "012\t" << ": which represents the value (" << 012 << ") : is of type octal\n"
+              << "0xc\t" << ": which represents the value (" << 0xc << ") : is of type hex\n"
               << std::endl;
-    std::cout << 3.14 << " : is of type decimal\n" << 3.14f
-             << " : is of type float\n" << 3.14L
-             << " : is of type long decimal (10 signifigant digits)\n"
+    std::cout << "------------" << std::endl;
+    std::cout << "3.14\t" << ": which represents the value (" << 3.14 << ") : is of type double\n"
+              << "3.14f\t" << ": which represents the value (" << 3.14f << ") : is of type floate\n"
+              << "3.14L\t" << ": which represents the value (" << 3.14L << ") : is of type long decimal\n"
              << std::endl;
-    std::cout << 10 << " : is of type int (unsigned int)\n" << 10u
-              << " : is of unsigned int\n" << 10.
-              << " : is of type decimal\n" << 10e-2
-              << " : is of type double\n"
+    std::cout << "------------" << std::endl;
+    std::cout << "10\t" << ": which represents the value (" << 10 << ") : is of type int\n"
+              << "10u\t" << ": which represents the value (" << 10u << ") : is of type usigned int\n"
+              << "10.\t" << ": which represents the value (" << 10. << ") : is of type int\n"
+              << "10e-2\t" << ": which represents the value (" << 10e-2 << ") : is of type float\n"
               << std::endl;
     return 0;
  }
