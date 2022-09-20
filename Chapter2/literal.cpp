@@ -41,10 +41,10 @@
     std::cout << "\t Hi \n";
     std::cout << "-----------" << std::endl;
 
-    std::cout << "'a' "  << "which represents the value (" << 'a' << ") : is of type char\n" 
-              << "L'a' which represents the value ("  << L'a' << ") : is of type wchar_t\n" 
-              << "\"a\" " << "which represents the value (" << "a" << ") : is of type string literal, with a size of 2 \n" 
-              << "L\"a\" " << "which represents the value (" << L"a" << ") : is of type wide characters\n"
+    std::cout << "'a'\t"  << ": which represents the value (" << 'a' << ") : is of type char\n" 
+              << "L'a'\t" << ": which represents the value ("  << L'a' << ") : is of type wchar_t\n" 
+              << "\"a\"\t" << ": which represents the value (" << "a" << ") : is of type string literal, with a size of 2 \n" 
+              << "L\"a\"\t" << ": which represents the value (" << L"a" << ") : is of type wide characters\n"
               << std::endl;
     std::cout << "-----------" << std::endl;
 
