@@ -31,5 +31,10 @@ std::cout << money << "\n";
     std::cout << input_value << "\n";
     double salary, wages = 9999.99;
     std::cout << salary << "\n";
-    
+
+    int num = 23;
+    int result = num / 0;
+    // will evaluate to 0 division by 0 is infinity.
+    std::cout << "\n" << result << std::endl;
+    return 0;
 }
