@@ -18,7 +18,7 @@ int main () {
 
       } // inner scope2 ends
     } // inner scope1 ends
-    
+
     // this will evaluate to 0 because the money variable in the global state
     // is accessable* to all scoopes
     // even though its declared but not defined its value will evaluate to 0
@@ -44,18 +44,18 @@ int main () {
     std::cout << "---------\n";
     // this v is not uninitalized its default value is and empty string
         // this is defined by the string class of the std library
-//     std::string empty;
-//     std::cout << sentence.length() <<  "\n";
+    std::string empty;
+    std::cout << sentence.length() <<  "\n";
 
 //     // will be truncated to 3
-//     int input_value = 3.14;
-//     std::cout << input_value << "\n";
-//     double salary, wages = 9999.99;
-//     std::cout << salary << "\n";
+    int input_value = 3.14;
+    std::cout << input_value << "\n";
+    double salary, wages = 9999.99;
+    std::cout << salary << "\n";
 
-//     int num = 23;
-//     int result = num / 0;
+    int num = 23;
+    int result = num / 0;
 //     // will evaluate to 0 division by 0 is infinity.
-//     std::cout << "\n" << result << std::endl;
-//     return 0;
+    std::cout << "\n" << result << std::endl;
+    return 0;
  }
