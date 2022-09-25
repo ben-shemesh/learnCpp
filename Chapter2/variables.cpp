@@ -1,9 +1,23 @@
 #include <iostream>
 #include <string>
 int money;
+int i = 40;
 int main () {
+    int i = 100, sum = 0;
+    for (int i = 0; i != 10; i++) {
+        sum += i;
+    std::cout << i << " " << sum << std::endl;
+    }
+    std::cout << "---------------\n";
+    {
+    int i = 100; // block scope
+    int j = i;
+    // should print out 100;
+    std::cout << j << "\n";
+    }
+
     {   // inner scope1 start
-        // &
+        // 
         // outter scope of inner scope2
         // declares a local variable money and initializes to 25;
        int money = 25;
@@ -57,5 +71,7 @@ int main () {
     int result = num / 0;
 //     // will evaluate to 0 division by 0 is infinity.
     std::cout << "\n" << result << std::endl;
+
+
     return 0;
  }
