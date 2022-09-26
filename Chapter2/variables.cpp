@@ -3,10 +3,11 @@
 int money;
 int i = 40;
 int main () {
+
     int i = 100, sum = 0;
     for (int i = 0; i != 10; i++) {
         sum += i;
-    std::cout << i << " " << sum << std::endl;
+        std::cout << i << " " << sum << std::endl;
     }
     std::cout << "---------------\n";
     {
@@ -22,7 +23,7 @@ int main () {
         // declares a local variable money and initializes to 25;
        int money = 25;
        // prints 25
-      std::cout << money << "\n";
+      std::cout << ::money << "\n";
       { // inner scope2 start inside of inner scope2
       // has access to money variable in inner scope1
       // defines it as 2, no longer 25
@@ -61,7 +62,7 @@ int main () {
     std::string empty;
     std::cout << sentence.length() <<  "\n";
 
-//     // will be truncated to 3
+    // will be truncated to 3
     int input_value = 3.14;
     std::cout << input_value << "\n";
     double salary, wages = 9999.99;
@@ -69,9 +70,7 @@ int main () {
 
     int num = 23;
     int result = num / 0;
-//     // will evaluate to 0 division by 0 is infinity.
+    // will evaluate to 0 division by 0 is infinity.
     std::cout << "\n" << result << std::endl;
-
-
     return 0;
  }
