@@ -1,4 +1,6 @@
 // compound types
+    // references
+    // pointers
 
 #include <iostream>
 
@@ -27,5 +29,20 @@ int main(){
         // which is a refernce to the value of num 
         // (600)
     std::cout << ii << " is the value of refNum" << "\n" << std::endl;
+
+    int i; // undefined
+    int &ri = i; // undefined (with reference displayed place in memory)
+    std::cout << &ri << std::endl; // place in memory of i
+    i = 5;
+    ri = 10; // same as i = 10
+    std::cout << i << " " << ri << std::endl;
+
+    int i = 0, &r1 = i;
+    double d = 0, &r2 = d;
+    r2 = 3.14; // same as d = 3.14
+    r2 = r1; // same as d = 0
+    i = r2; // same as i = 0
+    r1 = d; // same as i = 0
+    std::cout << r1 << i << d << r2 << std::endl;
 
 }
