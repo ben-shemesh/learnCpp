@@ -99,10 +99,11 @@ int main() {
     */
    int i = 0;
    // illegal becasuse the pointer and the object must be of the same type
-   double* dp = &i;
-   // illegal as its not pointing to a place in memory
-   int *ip = i;
-   // legal
+//    double* dp = &i;
+   // illegal as its not holding a place in memory
+//    int *ip = i;
+   // legal holds a place in memory
    int *p = &i;
+
 
 }
