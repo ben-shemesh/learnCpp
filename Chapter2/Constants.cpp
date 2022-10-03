@@ -34,4 +34,33 @@ int main (){
    // value changes even though its a const ref, becuase it was change indirectly
    std::cout << "the value of ref2 is:\t" << ref2 << "\n" << std::endl;
 
+    const double pies = 3.14;
+    const double *ppies = &pies;
+    std::cout << " the value of pies is: " << *ppies
+              << " the  address of pies is: " << ppies
+              << std::endl;
+
+        /*
+    Pointers to conts
+    */
+    std::cout << "-------------" << std::endl;
+
+    // indicates that the variable myNUmmy is const and cannot/shouldnt change
+    int myNummy = 666;
+    // indicates that ptrNummy is a pointer that points to a const int
+    const int *ptrNummy = &myNummy;
+    std::cout << *ptrNummy << "\n" << std::endl;
+    // indicate a constant pointer (ptrNummy) points to a const int
+        // the address that the pointer holds nor the value that is points to can be changed
+    const int *ptrNummy2 = &myNummy;
+    const int ex = 42;
+    std::cout << *ptrNummy2 << "\n" << std::endl;
+    const int &refex = ex;
+    int evil = 666;
+
+    int *const ptrEvil = &evil;
+
+    // constexpr Variables
+        // constant expressions are expressions whose values cannot change 
+        // and can be evaluated at compile time  
 }
