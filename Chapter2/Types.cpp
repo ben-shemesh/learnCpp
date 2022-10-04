@@ -30,26 +30,38 @@ int main (){
     // type = int j = i (i)
     auto j = i;
         std::cout << "1\t" << typeid(j).name() << std::endl;
-        std::cout << j << std::endl;
+        std::cout << j << "\n" << std::endl;
 
     // type = const int &k = i (i)
+        // a reference to a constant int
     const auto &k = i;
-    std::cout << "2\t" << typeid(&k).name() << std::endl;
-    std::cout << &k << std::endl;
+    std::cout << "2\t" << typeid(k).name() << std::endl;
+    std::cout << k << "\n" << std::endl;
 
     // type = int *p = i (PKi)
+        // a pointer to a constant int
     auto *p = &i;
-        std::cout << "3\t" << typeid(*p).name() << std::endl;
-        std::cout << *p << std::endl;
+        std::cout << "3\t" << typeid(p).name() << std::endl;
+        std::cout << p << "\n" << std::endl;
 
     // type = const int j2 = i (i)
     const auto j2 = i;
         std::cout << "4\t" << typeid(j2).name() << std::endl;
-        std::cout << j2 << std::endl;
+        std::cout << j2 <<  "\n" << std::endl;
 
     // type = const int &k2 = i (i)
+        // a reference to a constant int
     const auto &k2 = i;
-        std::cout << "5\t" << typeid(&k2).name() << std::endl;
-        std::cout << &k2 << std::endl;
+        std::cout << "5\t" << typeid(k2).name() << std::endl;
+        std::cout << k2 << "\n" << std::endl;
+    
+    const int ci = 0, &cj = ci;
+    // what ever the type of ci is x will have that same type
+    decltype(ci) x = 0;
+    // what ever type cj is  y will have that same type  
+    decltype(cj) y = x;
+    // what ever type cj is  z will have that same type  
+        // z must be initlialized though as cj is a reference  of ci
+    decltype(cj) z = x;
 
 }
