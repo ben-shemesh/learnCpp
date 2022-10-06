@@ -40,9 +40,31 @@ int main() {
     std::cout << "Please enter a string\n" << std::endl;
     std::getline(std::cin,myString2);
     std::cout << myString2 <<std::endl; 
-
     if (myString2.size() > 10)
         std::cout << " This is a long string";
     else 
         std::cout << " This is a short string";
+
+    std::string whileString;
+    std::cout << "Hello, please enter a string." << std::endl;
+    // getline doesn't ignore whitespace and inlcude it into the the number of characters
+        //in a string
+    while (getline(std::cin, whileString))
+    // .empty() returns a bool indicating whether or not a string is empty or not
+    if (!whileString.empty())
+    // .size() returns the number of characters in a string
+        if (whileString.size() > 10)
+            std::cout << "The size of: \'" 
+            <<  whileString << "\' is " 
+            << whileString.size() 
+            << " characters long."
+            << std::endl;
+        else 
+            std::cout << "Please enter a longer string" 
+            << std::endl;
+    else 
+        std::cout << "No string provided. Please try again." 
+        << std::endl;
+    
+    return 0;
 }
