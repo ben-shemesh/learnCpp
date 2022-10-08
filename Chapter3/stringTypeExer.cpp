@@ -18,10 +18,16 @@ int main(){
         std::cout << lineOfText[i] << i << std::endl;
     }
     std::cout << lineOfText;
-    auto numOfPunct = 0;
+    // this set the number of punct to 0 from th start
+    int numOfPunct = 0;
+    //  this creates a loop that traverser the string 
+    // each element in the string is represted by c in the range for loop
     for (auto c: lineOfText){
+        // if the element is not a punct continue
         if (!ispunct(c)){
+            // append at the characters that are not a punc to the result string
             result += c;}
+        // if the element is a punct icrease the puinct count by 1;
         else if (ispunct(c)){
             numOfPunct++;
         }}
