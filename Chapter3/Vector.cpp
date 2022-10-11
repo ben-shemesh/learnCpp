@@ -59,34 +59,41 @@ int main(){
     //         for (auto x: v7)
     //         std::cout << x << "\n" << std::endl;
 
-    // std::string text;
-    // std::vector<std::string> testSeqence;
-    // while (std::cin >> text){
-    //     testSeqence.push_back(text);
-    //     for (auto &i: testSeqence)
-    //         for(auto &j: i)
-    //             if (!isupper(j))
-    //             j = isupper(j);
-    // }
-
-    // a vector with int elements
-    std::vector<int> groupOfNumber;
-
-    std::cout << "please enter a number\n";
-    int myNumber;
-    int count;
-    int sum = 0;
-    while (count < 10){
-        std::cin >> myNumber;
-        std::cout << myNumber << "\n" << std::endl;;
-        groupOfNumber.push_back(myNumber);
-        count++;
-    }   
-    
-    for (int i = 0; i < groupOfNumber.size(); i+=2){
-        // std::cout << "\t" << sum << "\t" << std::endl;
-        sum += groupOfNumber[i] + groupOfNumber[i + 1];
-        std::cout << "\t" << sum << "\t" << std::endl;
+// dynamic vector that reads-add words, then converts the words to capitalize all the words
+    std::cout << "Please enter a list of words.\n";
+    std::vector<std::string> groupOfWords;
+    std::string word;
+    while (getline(std::cin, word)){
+        groupOfWords.push_back(word);
     }
+    for (auto &i: groupOfWords){
+        std::cout << i << "\n" << std::endl;
+        for (auto &j: i){
+            j = toupper(j);
+            std::cout << j << "\n" << std::endl;
+           }
+        }
+    for (auto k: groupOfWords)
+        std::cout << k << std::endl;
+
+    // // a vector with int elements
+    // std::vector<int> groupOfNumber;
+
+    // std::cout << "please enter a list of numbers\n";
+    // int myNumber;
+    // int count;
+    // int sum = 0;
+    // while (count < 10){
+    //     std::cin >> myNumber;
+    //     std::cout << myNumber << "\n" << std::endl;;
+    //     groupOfNumber.push_back(myNumber);
+    //     count++;
+    // }   
+    
+    // for (int i = 0; i < groupOfNumber.size(); i+=2){
+    //     // std::cout << "\t" << sum << "\t" << std::endl;
+    //     sum += groupOfNumber[i] + groupOfNumber[i + 1];
+    //     std::cout << "\t" << sum << "\t" << std::endl;
+    // }
 
 }
