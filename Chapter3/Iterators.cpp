@@ -64,5 +64,10 @@ int main(){
         std::cout << *it << std::endl;
     for (auto it = v5.cbegin(); it != v5.end(); ++it)
         std::cout << *it << std::endl;
-
+    // ------------------------------------
+    std::vector<int> theNumberVec{1,2,3,4,5,6,7,8,9,10};
+    for (auto it = theNumberVec.begin(); it != theNumberVec.end(); ++it){
+        *it *= 2;
+        std::cout << *it << "\n" << std::endl;
+        }
 }
