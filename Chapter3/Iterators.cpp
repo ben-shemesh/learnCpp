@@ -71,20 +71,27 @@ int main(){
     //     std::cout << *it << "\n" << std::endl;
     //     }
     // // ------------------------------------
-    std::vector<int> vecOfNumbers {12, 13, 10, 20, 30};
+    std::vector<int> vecOfNumbers{12, 13, 10, 20, 30};
+        for (auto it = vecOfNumbers.cbegin(); it != vecOfNumbers.end(); ++it){
+            auto last = vecOfNumbers.end()-1;
+            auto fist = vecOfNumbers.begin();
+            auto sum = *fist + *last;
+            std::cout << sum;
+            std::cout << "\n";
 
-        for (auto it = vecOfNumbers.begin(); it != vecOfNumbers.end(); ++it){
-                std::cout << *it << std::endl;
-                for (auto &i: vecOfNumbers){
-                        std::cout << "--------------" << std::endl;
-                        auto sum = *it + i;
-                        std::cout << "it is equal to : " <<  *it << "\n" << std::endl;
-                        std::cout <<  "i is equal to :" << i << "\n" << std::endl;
-                        std::cout << " The sum is: " << sum << "\n" << std::endl;
-                        }
-        
         }
+        for (auto &i: vecOfNumbers)
+            std::cout << i;
 
-    // {3 12 34 5 67 34 76}
-  
+    // for (auto it = vecOfNumbers.cbegin(); it != vecOfNumbers.end(); ++it){
+    //     auto end = *vecOfNumbers.end();
+    //     auto sum = *it + end;
+    //     std::cout << sum;
+    //     // auto sum = 0; 
+    //     // auto next = ++it;
+    //     // if (next != vecOfNumbers.end())
+    //     // for (int j = *(++it); j != *next; ++j )
+    //     // sum += *it + *next;
+
+    //     }
 }
