@@ -71,7 +71,7 @@ int main(){
         *it *= 2;
         std::cout << *it << "\n" << std::endl;
         }
-    // ------------------------------------
+    ------------------------------------
 
     // intilize the vec of type int 
     // 12 12 34 12 45 23 2 5 12 10
@@ -84,16 +84,17 @@ int main(){
         ++count;
         }
         // create both the front and back default elemetns of the vector
-        auto front = vecOfNumbers.begin();
-        auto back = vecOfNumbers.end() -1;
+        auto frontEl = vecOfNumbers.begin();
+        auto backEl = vecOfNumbers.end() -1;
         // no need for init as its done above
             // while the back itrator is greater than the front iterator
                 // increament the front to move it forward and the decrease the back iterator to move it backwards
-        for (   ;back > front; ++front, --back){
+            // as long as the back (element number) is greater than the front(element number) continue.
+        for (   ;frontEl < backEl; ++frontEl, --backEl){
             //add the elements
-            int total = *front + *back;
-                std::cout << "The sum of the " << *front
-                          << " and " << *back 
+            int total = *frontEl + *backEl;
+                std::cout << "The sum of the " << *frontEl
+                          << " and " << *backEl 
                           << " is equal to: " << total 
                           << std::endl;
             }
