@@ -71,7 +71,7 @@ int main(){
         *it *= 2;
         std::cout << *it << "\n" << std::endl;
         }
-    ------------------------------------
+    // ------------------------------------
 
     // intilize the vec of type int 
     // 12 12 34 12 45 23 2 5 12 10
@@ -129,4 +129,42 @@ int main(){
         }
         for (auto &i: vecOfNumbers)
             std::cout << i;
+        // ------------------------------------
+        // creates a vectore of type unsignes that holds 11 elements of 0 value
+        std::vector<unsigned> scores (11, 0);
+        unsigned grade;
+        unsigned count = 0;
+        while (count < 11){
+            // input the grade 
+            std::cin >> grade;
+            // push the grade in the scores vector
+            scores.push_back(grade);
+            if (grade <= 100)
+                // this increments each the count of the cluster
+                // whenever the grade falls within a cluster of 10th value.
+                ++scores[grade/10];
+            count++;
+            }
+        for (auto &i: scores)
+            std::cout << i << " " << std::endl;
+
+        std::vector<unsigned> newScores(11);
+        unsigned newGrades;
+        unsigned count = 0;
+        while(count < 11){
+            std::cin >> newGrades;
+            newScores.push_back(newGrades);
+            count++;
+            std::cout << " the count s at: " << count <<  "\n" << std::endl;
+            }
+
+        for(auto it = newScores.begin(); it != newScores.end(); ++it){
+            if (*it <= 100)
+                ++newScores[*it/10];
+        }
+        for (auto &i: newScores)
+            std::cout << i << "\n";
+
+
+
 }
