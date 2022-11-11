@@ -26,12 +26,29 @@ int main(){
     // for (auto i: sa)
     //     std::cout << i << "\n" << std::endl;
     // // should evalaute to an array of 10 elements of 0 int ia3[10];
-    size_t arrOf10[10]{1,2,3,4,4,5,6,};
-    for (int i = 0; i < sizeof arrOf10 / sizeof arrOf10[0]; i++){
-        std::cout << i <<"\n\n";
-        arrOf10[i] = i;
+    // int arrOf10[10]{1,2,3,4,4,5,6,};
+    // int newArr[10]{};
+    // for (int i = 0; i < sizeof(arrOf10) / sizeof(arrOf10[0]); i++){
+    //     arrOf10[i] = i; 
+    //     newArr[i] = arrOf10[i];
+    //     std::cout << newArr[i];
+    // }
+    std::vector<int> vec1;
+    std::vector<int> vec2;
+    int number;
+    int count = 0;
+    while (count < 10){
+        std::cout << "Please enter a number\n";
+        std::cin >> number;
+        vec1.push_back(number);
+        count++;
     }
-    for (auto i: arrOf10)
+
+    for (int i = 0; i < vec1.size(); i++){
+        vec2.push_back(vec1[i]);
+    }
+    
+    for (auto i: vec2)
         std::cout << i << "\n";
     
 }
