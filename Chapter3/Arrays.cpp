@@ -1,5 +1,7 @@
 #include<iostream>
 #include<vector>
+#include<string>
+#include<iterator>
 int main(){
     // // unsigned cnt that has the value of 42
     // unsigned cnt = 42;
@@ -33,22 +35,35 @@ int main(){
     //     newArr[i] = arrOf10[i];
     //     std::cout << newArr[i];
     // }
-    std::vector<int> vec1;
-    std::vector<int> vec2;
-    int number;
-    int count = 0;
-    while (count < 10){
-        std::cout << "Please enter a number\n";
-        std::cin >> number;
-        vec1.push_back(number);
-        count++;
-    }
+    // std::vector<int> vec1;
+    // std::vector<int> vec2;
+    // int number;
+    // int count = 0;
+    // while (count < 10){
+    //     std::cout << "Please enter a number\n";
+    //     std::cin >> number;
+    //     vec1.push_back(number);
+    //     count++;
+    // }
 
-    for (int i = 0; i < vec1.size(); i++){
-        vec2.push_back(vec1[i]);
-    }
+    // for (int i = 0; i < vec1.size(); i++){
+    //     vec2.push_back(vec1[i]);
+    // }
+
+    // for (auto i: vec2)
+    //     std::cout << i << "\n";
     
-    for (auto i: vec2)
-        std::cout << i << "\n";
-    
+
+    // pointers and array
+
+    std::string nums[] = {"hello", "world", "c++"};
+
+    int arr[]{0,1,2,3,4,5,-6,7,8,9,-23,45};
+    int *pbegin  = std::begin(arr);
+    int *pend = std::end(arr);
+
+   for (;pbegin != pend; ++pbegin) 
+        if (*pbegin < 0){
+            std::cout << *pbegin;
+        }
 }
